@@ -128,14 +128,17 @@ main{
     background-color: #222222;
 }
 
+
 .flex-container-row{
+    height: 500px;
+    background-color: white;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    justify-content: center ;
+    flex-wrap: wrap;
     width: 80%;
-    align-items: center;
     margin: 0 auto;
-    padding-top: 50px;
 }
 
 .blue{
@@ -160,36 +163,73 @@ main{
 
 .bg-dark{
     background-color: #D3D3D3;
-    min-height: 500px;
 }
 
 .bg-white{
     background-color: white;
-    min-height: 500px;
+
 }
 .flex-container-row-rev{
+    height: 500px;
+    background-color: #D3D3D3;
     display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
+    align-content: center;
+    text-align: center;
+    justify-content: center ;
+    flex-wrap: wrap;
     width: 80%;
-    align-items: center;
     margin: 0 auto;
-    padding-top: 50px;
 }
 
 .box{
-    height: 400px;
     background-color: #D3D3D3;
-    display: flex;
-    align-items: center;
+
 }
 
 .green{
-    height: 350px;
+    height: 900px;
+    background-color: #D3D3D3;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center ;
+    flex-wrap: wrap;
     width: 80%;
-    margin: 0px auto;
-    max-height: 500px;
+    margin: 0 auto;
 }
+
+.green h2{
+    padding-bottom: 30px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.green img{
+    width: 800px;
+}
+
+.green button{
+    height: 50px;
+    border: 0;
+    border-radius: 15px;
+    margin-left: 20px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #5865F2;
+    color: white;
+}
+
+.green button img{
+    
+    width: 9px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+
+
+/* Fine CSS Main */
+
+/* Inizio CSS Footer */
 
 .flex-container-column{
     display: flex;
@@ -198,31 +238,56 @@ main{
     height: 220px;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 .red{
     height: 200px;
     width: 60%;
     margin: 0px auto;
-    background-color: #F08080;
-    border: 1px dashed black;
+    color: white;
+
+}
+
+.red h2{
+    padding-bottom: 20px;
+    color: #7983F5;
+}
+
+.red p{
+    
+}
+
+p img.flag{
+    width: 20px;
+}
+
+p img.angle-down{
+    width: 15px;
+    filter: invert(1);
 }
 
 .acqua{
     height: 200px;
     width: 40%;
     margin: 0px auto;
-    background-color: #20B2AA;
-    border: 1px dashed black;
+    color: white;
+    line-height: 30px;
 }
 
-/* Fine CSS Main */
-
-/* Inizio CSS Footer */
+.acqua h3{
+    padding-bottom: 20px;
+    color: #7983F5;
+}
 
 footer{
-    border-top: solid white 2px;
     padding-top: 10px;
+}
+
+hr{
+    width: 80%;
+    margin: 0 auto;
+
 }
 
 section.foot{
@@ -232,9 +297,17 @@ section.foot{
     height: 40px;
     width: 80%;
     margin: 0px auto;
-    background-color: #7FFFD4;
-    border: 1px dashed black;
-    
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.button-item > button{
+    color: white;
+    background-color: #7983F5;
+    border: 0;
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
 }
 
 /* Fine CSS Footer */
